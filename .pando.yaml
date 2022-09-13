@@ -1,0 +1,34 @@
+---
+options:
+  deployer: apply
+# targets defines the list of deployment targets for your application. All apps
+# get a local target by default, which allows you to deploy it locally, on your
+# laptop. You can also define additional targets for production deployments in
+# our Kubernetes clusters.
+targets:
+  local:
+    context: local
+    namespace: default
+    values:
+      backendIngressHost: tardigrade.local.rsglab.com
+# This is an example of a remote deployment target. You will need to modify it
+# to add your real namespace and context once you determine those.
+# You can follow along with this wiki https://confluence.mailchimp.com/display/PANDO/Creating+a+new+namespace+in+Pando
+# to create a namespace and context.
+# This is
+#  cluster2.prod:
+#    context: cluster2.prod
+#    namespace: your-namespace-here
+#    deployType: ci
+#    values:
+#      backendIngressHost: tardigrade.platform.rsglab.com
+# pando tests:
+# define additional pando test suites here. For a suite named "foo",
+# create a corresponding script in script/test-foo. Pando's CI pipeline
+# will automatically run your tests against all pull requests and report the
+# status back to the pull request.
+# pando init automatically creates a pando-lint script for you. You can add
+# as many additional test suites as you want.
+suites:
+- name: pando-lint
+  description: Lint Pando Config
