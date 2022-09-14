@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# TODO This is an optional build script. pando build will run it before building
-# your docker image. You can use it to build artifacts that you can then copy in during
-# the Docker build stage.
-# Use docker run to wrap any complex operations you run here, to ensure that they
-# run identically locally and in CI.

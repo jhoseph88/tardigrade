@@ -1,7 +1,0 @@
-# Add and set any values used in your Helm charts here. If they are global settings, you may want to
-# add them to your .pando.yaml file instead
-
-#TODO: Set this alertroute to a non-default setting, especially before you deploy to production!
-#      To define a new alertroute, follow along in this wiki https://confluence.mailchimp.com/display/PANDO/Setting+an+alertroute
-alertroute: default
-replicas: 1
