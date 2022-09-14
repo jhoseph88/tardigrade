@@ -20,4 +20,3 @@ spec:
           serviceName: {{ .Chart.Name }}
           servicePort: http-app
         path: /
-

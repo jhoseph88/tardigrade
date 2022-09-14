@@ -1,0 +1,8 @@
+#!/bin/bash
+set -eux
+set -o pipefail
+
+source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/common.sh"
+
+dockerwrap us.gcr.io/rsg-base-prod/golang:1.17.13 go test -v -mod=vendor ./...
+

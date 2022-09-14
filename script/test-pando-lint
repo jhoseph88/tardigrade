@@ -8,5 +8,5 @@ cd "${ROOT}"
 export PATH="${ROOT}/bin":$PATH
 
 for F in $(pando targets | grep -v local); do
-    pando lint --validate --termination --target=$F
+    pando lint --validate --target=$F
 done

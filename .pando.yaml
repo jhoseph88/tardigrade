@@ -9,8 +9,8 @@ targets:
   local:
     context: local
     namespace: default
-    values:
-      backendIngressHost: tardigrade.local.rsglab.com
+    # values:
+    #   backendIngressHost: tardigrade.local.rsglab.com
 # This is an example of a remote deployment target. You will need to modify it
 # to add your real namespace and context once you determine those.
 # You can follow along with this wiki https://confluence.mailchimp.com/display/PANDO/Creating+a+new+namespace+in+Pando
